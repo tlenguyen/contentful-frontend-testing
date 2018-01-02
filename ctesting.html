@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .hidden
+            {
+                display: none;
+            }
+        </style>
+        <meta charset="utf-8">
+            <title>Contentful Frontend Testing</title>
+    </head>
+
+        <script>
+            function setCheckbox(){
+                var el1 = document.getElementById("p1");
+                if (el1.checked)
+                    document.getElementById("hContainer1").disabled = false;
+                else
+                    document.getElementById("hContainer1").disabled = true;
+                if (el1.checked)
+                    document.getElementById("hHero1").disabled = false;
+                else
+                    document.getElementById("hHero1").disabled = true;
+                if (el1.checked)
+                    document.getElementById("hTop1").disabled = false;
+                else
+                    document.getElementById("hTop1").disabled = true;
+                if (el1.checked)
+                    document.getElementById("hMiddle1").disabled = false;
+                else
+                    document.getElementById("hMiddle1").disabled = true;
+                if (el1.checked)
+                    document.getElementById("hFooter1").disabled = false;
+                else
+                    document.getElementById("hFooter1").disabled = true;
+                if (el1.checked)
+                    document.getElementById("hSubfooter1").disabled = false;
+                else
+                    document.getElementById("hSubfooter1").disabled = true;
+                if (el1.checked)
+                    document.getElementById("hAppbanner1").disabled = false;
+                else
+                    document.getElementById("hAppbanner1").disabled = true;
+            
+                var el2 = document.getElementById("p2");
+                if (el2.checked)
+                    document.getElementById("hContainer2").disabled = false;
+                else
+                    document.getElementById("hContainer2").disabled = true;
+                if (el2.checked)
+                    document.getElementById("hHero2").disabled = false;
+                else
+                    document.getElementById("hHero2").disabled = true;
+                if (el2.checked)
+                    document.getElementById("hTop2").disabled = false;
+                else
+                    document.getElementById("hTop2").disabled = true;
+                if (el2.checked)
+                    document.getElementById("hMiddle2").disabled = false;
+                else
+                    document.getElementById("hMiddle2").disabled = true;
+                if (el2.checked)
+                    document.getElementById("hFooter2").disabled = false;
+                else
+                    document.getElementById("hFooter2").disabled = true;
+                if (el2.checked)
+                    document.getElementById("hSubfooter2").disabled = false;
+                else
+                    document.getElementById("hSubfooter2").disabled = true;
+                if (el2.checked)
+                    document.getElementById("hAppbanner2").disabled = false;
+                else
+                    document.getElementById("hAppbanner2").disabled = true;
+            
+                var el3 = document.getElementById("p3");
+                if (el3.checked)
+                    document.getElementById("search").disabled = false;
+                else
+                    document.getElementById("search").disabled = true;
+                if (el3.checked)
+                    document.getElementById("sAppbanner").disabled = false;
+                else
+                    document.getElementById("sAppbanner").disabled = true;
+            
+                var el4 = document.getElementById("p4");
+                if (el4.checked)
+                    document.getElementById("restaurant").disabled = false;
+                else
+                    document.getElementById("restaurant").disabled = true;
+                if (el4.checked)
+                    document.getElementById("restAppbanner").disabled = false;
+                else
+                    document.getElementById("divRestAppbanner").disabled = true;
+            
+                var el5 = document.getElementById("p5");
+                if (el5.checked)
+                    document.getElementById("oContainer").disabled = false;
+                else
+                    document.getElementById("oContainer").disabled = true;
+                if (el5.checked)
+                    document.getElementById("oTop").disabled = false;
+                else
+                    document.getElementById("oTop").disabled = true;
+                if (el5.checked)
+                    document.getElementById("oFooter").disabled = false;
+                else
+                    document.getElementById("oFooter").disabled = true;
+                if (el5.checked)
+                    document.getElementById("oReceipt").disabled = false;
+                else
+                    document.getElementById("oReceipt").disabled = true;
+                if (el5.checked)
+                    document.getElementById("oAppbanner").disabled = false;
+                else
+                    document.getElementById("oAppbanner").disabled = true;
+            
+                var el6 = document.getElementById("p6");
+                if (el6.checked)
+                    document.getElementById("rFooter").disabled = false;
+                else
+                    document.getElementById("rFooter").disabled = true;
+                if (el6.checked)
+                    document.getElementById("rContainer").disabled = false;
+                else
+                    document.getElementById("rContainer").disabled = true;
+                if (el6.checked)
+                    document.getElementById("rTop").disabled = false;
+                else
+                    document.getElementById("rTop").disabled = true;
+                if (el6.checked)
+                    document.getElementById("rTFooter").disabled = false;
+                else
+                    document.getElementById("rTFooter").disabled = true;
+                if (el6.checked)
+                    document.getElementById("rReceipt").disabled = false;
+                else
+                    document.getElementById("rReceipt").disabled = true;
+                if (el6.checked)
+                    document.getElementById("rAppbanner").disabled = false;
+                else
+                    document.getElementById("rAppbanner").disabled = true;
+            
+                var el7 = document.getElementById("p7");
+                if (el7.checked)
+                    document.getElementById("tContainer").disabled = false;
+                else
+                    document.getElementById("tContainer").disabled = true;
+                if (el7.checked)
+                    document.getElementById("tTop").disabled = false;
+                else
+                    document.getElementById("tTop").disabled = true;
+                if (el7.checked)
+                    document.getElementById("tFooter").disabled = false;
+                else
+                    document.getElementById("tFooter").disabled = true;
+                if (el7.checked)
+                    document.getElementById("tReceipt").disabled = false;
+                else
+                    document.getElementById("tReceipt").disabled = true;
+                if (el7.checked)
+                    document.getElementById("tAppbanner").disabled = false;
+                else
+                    document.getElementById("tAppbanner").disabled = true;
+            }
+            </script>
+            <body>
+            <h1>Contentful Frontend Testing</h1>
+            <p>
+                <div>
+                    <label>Contentful ID</label>
+                    <input id="contentfulID" type="text">
+                </div>
+
+                <div>
+                    <label>Sample ID: 6lxixFbA642eCQOICiM0eI</label>
+                </div>
+            </p>
+
+            <p>
+                Select the page and placement for your campaign.
+            </p>
+
+            <p>
+                <div>
+                    <input type="radio" name="page" id="p1" value="" onchange="setCheckbox();" />Homepage
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hContainer1" value="?chiri_homepage-container=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Container
+                </div>
+
+                <div id="divHContainer1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l1" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hHero1" value="?chiri_homepage-hero-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Hero
+                </div>
+
+                <div id="divHHero1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l2" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hTop1" value="?chiri_homepage-top-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+
+                <div id="divHTop1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l3" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hMiddle1" value="?chiri_homepage-middle-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Middle
+                </div>
+
+                <div id="divHMiddle1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l4" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hFooter1" value="?chiri_homepage-footer-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Footer
+                </div>
+
+                <div id="divHFooter1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l5" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hSubfooter1" value="?chiri_homepage-subfooter-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Subfooter
+                </div>
+
+                <div id="divHSubfooter1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l6" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hAppbanner1" value="?chiri_appbanner=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divHAppbanner1" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l7" target="_blank">Testing Link</a>
+                </div>
+            </p>
+
+            <p>
+                <div>
+                    <input type="radio" name="page" id="p2" value="lets-eat/" onchange="setCheckbox();" />Let's Eat
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hContainer2" value="?chiri_homepage-container=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Container
+                </div>
+
+                <div id="divHContainer2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l8" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hHero2" value="?chiri_homepage-hero-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Hero
+                </div>
+
+                <div id="divHHero2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l9" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hTop2" value="?chiri_homepage-top-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+
+                <div id="divHTop2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l10" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hMiddle2" value="?chiri_homepage-middle-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Middle
+                </div>
+
+                <div id="divHMiddle2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l11" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hFooter2" value="?chiri_homepage-footer-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Footer
+                </div>
+
+                <div id="divHFooter2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l12" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hSubfooter2" value="?chiri_homepage-subfooter-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Subfooter
+                </div>
+
+                <div id="divHSubfooter2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l13" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="hAppbanner2" value="?chiri_homepage-subfooter-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divHAppbanner2" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l14" target="_blank">Testing Link</a>
+                </div>
+            </p>
+
+            <p>
+                <div>
+                    <input type="radio" name="page" id="p3" onchange="setCheckbox();" />Search
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="search" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+                        
+                <div id="divSearch" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l15" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="sAppbanner" value="?chiri_appbanner=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divSAppbanner" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l16" target="_blank">Testing Link</a>
+                </div>
+            </p>
+
+            <p>
+                <div>
+                    <input type="radio" name="page" id="p4" onchange="setCheckbox();" />Restaurant
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="restaurant" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+                                
+                <div id="divRestaurant" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l17" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="restAppbanner" value="?chiri_appbanner=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divRestAppbanner" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l18" target="_blank">Testing Link</a>
+                </div>
+            </p>
+
+            <p>
+                <div>
+                    <input type="radio" name="page" id="p5" value="track-your-order/" onchange="setCheckbox();" />Order Status
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="oContainer" value="?chiri_order-status-container=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Container
+                </div>
+                                    
+                <div id="divOContainer" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l19" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="oTop" value="?chiri_order-status-top-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+                                        
+                <div id="divOTop" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l20" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="oFooter" value="?chiri_order-status-footer-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Footer
+                </div>
+                                            
+                <div id="divOFooter" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l21" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="oReceipt" value="?chiri_receipt-banner-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Receipt
+                </div>
+                                                
+                <div id="divOReceipt" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l22" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="oAppbanner" value="?chiri_appbanner=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divOAppbanner" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l23" target="_blank">Testing Link</a>
+                </div>
+            </p>
+
+            <p>
+                <div>
+                        <input type="radio" name="page" id="p6" value="order-receipt/" onchange="setCheckbox();" />Order Receipt
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="rFooter" value="?chiri_order-status-footer-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Order Status Footer
+                </div>
+                                        
+                <div id="divRFooter" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l24" target="_blank">Testing Link</a>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="placement" id="rContainer" value="?chiri_thankyou-container=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Container
+                </div>
+                                            
+                <div id="divRContainer" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l25" target="_blank">Testing Link</a>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="placement" id="rTop" value="?chiri_thankyou-top-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+                                                
+                <div id="divRTop" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l26" target="_blank">Testing Link</a>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="placement" id="rTFooter" value="?chiri_thankyou-footer-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Thank You Footer
+                </div>
+                                                    
+                <div id="divRTFooter" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l27" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="rReceipt" value="?chiri_receipt-banner-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Receipt
+                </div>
+                                                        
+                <div id="divRReceipt" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l28" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="rAppbanner" value="?chiri_appbanner=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divRAppbanner" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l29" target="_blank">Testing Link</a>
+                </div>
+            </p>
+
+            <p>
+                <div>
+                    <input type="radio" name="page" id="p7" value="thank-you/" onchange="setCheckbox();" />Thank You
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="tContainer" value="?chiri_thankyou-container=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Container
+                </div>
+                                        
+                <div id="divTContainer" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l30" target="_blank">Testing Link</a>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="placement" id="tTop" value="?chiri_thankyou-top-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Top
+                </div>
+                                            
+                <div id="divTTop" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l31" target="_blank">Testing Link</a>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="placement" id="tFooter" value="?chiri_thankyou-footer-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Footer
+                </div>
+                                                
+                <div id="divTFooter" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l32" target="_blank">Testing Link</a>
+                </div>
+        
+                <div>
+                    <input type="checkbox" name="placement" id="tReceipt" value="?chiri_receipt-banner-content=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Receipt
+                </div>
+                                                    
+                <div id="divTReceipt" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l33" target="_blank">Testing Link</a>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="placement" id="tAppbanner" value="?chiri_appbanner=" onclick="grabValue();" data-on="Yes" data-off="No" disabled="disabled" />Appbanner
+                </div>
+
+                <div id="divTAppbanner" class="hidden">
+                    <a href="https://pp.grubhub.com/" id="l34" target="_blank">Testing Link</a>
+            </p>
+<script>
+var elem = document.getElementById('hContainer1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHContainer1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hHero1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHHero1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hTop1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHTop1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hMiddle1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHMiddle1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hFooter1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHFooter1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hSubfooter1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHSubfooter1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hAppbanner1');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHAppbanner1'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hContainer2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHContainer2'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hHero2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHHero2'); 
+    if(this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hTop2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHTop2'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hMiddle2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHMiddle2'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hFooter2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHFooter2'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hSubfooter2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHSubfooter2'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('hAppbanner2');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divHAppbanner2'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('search');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divSearch'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('sAppbanner');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divSAppbanner'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('restaurant');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRestaurant'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('restAppbanner');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRestAppbanner'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('oContainer');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divOContainer'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('oTop');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divOTop'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('oFooter');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divOFooter'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('oReceipt');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divOReceipt'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('oAppbanner');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divOAppbanner'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('rFooter');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRFooter'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('rContainer');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRContainer'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('rTop');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRTop'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('rTFooter');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRTFooter'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('rReceipt');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRReceipt'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('rAppbanner');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divRAppbanner'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('tContainer');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divTContainer'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('tTop');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divTTop'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('tFooter');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divTFooter'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('tReceipt');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divTReceipt'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+var elem = document.getElementById('tAppbanner');
+elem.addEventListener('click', function() {
+    var divElem = document.getElementById('divTAppbanner'); 
+    if (this.checked){
+        divElem.style.display = 'block'; 
+    }
+    else{
+        divElem.style.display = 'none';
+    }
+});
+
+function grabValue() {
+    var CID = document.getElementById("contentfulID").value;
+
+    document.getElementById("l1").setAttribute('href', 'https://pp.grubhub.com/?chiri_homepage-container='+CID);
+    document.getElementById("l2").setAttribute('href', 'https://pp.grubhub.com/?chiri_homepage-hero-content='+CID);
+    document.getElementById("l3").setAttribute('href', 'https://pp.grubhub.com/?chiri_homepage-top-content='+CID);
+    document.getElementById("l4").setAttribute('href', 'https://pp.grubhub.com/?chiri_homepage-middle-content='+CID);
+    document.getElementById("l5").setAttribute('href', 'https://pp.grubhub.com/?chiri_homepage-footer-content='+CID);
+    document.getElementById("l6").setAttribute('href', 'https://pp.grubhub.com/?chiri_homepage-subfooter-content='+CID);
+    document.getElementById("l7").setAttribute('href', 'https://pp.grubhub.com/?chiri_appbanner='+CID);
+
+    document.getElementById("l8").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_homepage-container='+CID);
+    document.getElementById("l9").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_homepage-hero-content='+CID);
+    document.getElementById("l10").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_homepage-top-content='+CID);
+    document.getElementById("l11").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_homepage-middle-content='+CID);
+    document.getElementById("l12").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_homepage-footer-content='+CID);
+    document.getElementById("l13").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_homepage-subfooter-content='+CID);
+    document.getElementById("l14").setAttribute('href', 'https://pp.grubhub.com/lets-eat/?chiri_appbanner='+CID);
+
+    document.getElementById("l15").setAttribute('href', 'https://pp.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&facetSet=umamiV2&pageSize=20&hideHateos=true&searchMetrics=true&latitude=37.78666305&longitude=-122.39997101&facet=open_now%3Atrue&variationId=default-impressionScoreViewAdjSearchOnlyBuffed-20160607&sortSetId=umamiV2&sponsoredSize=3&countOmittingTimes=true?chiri_search-banner='+CID);
+    document.getElementById("l16").setAttribute('href', 'https://pp.grubhub.com/search?orderMethod=delivery&locationMode=DELIVERY&facetSet=umamiV2&pageSize=20&hideHateos=true&searchMetrics=true&latitude=37.78666305&longitude=-122.39997101&facet=open_now%3Atrue&variationId=default-impressionScoreViewAdjSearchOnlyBuffed-20160607&sortSetId=umamiV2&sponsoredSize=3&countOmittingTimes=true?chiri_search-banner='+CID);
+
+    document.getElementById("l17").setAttribute('href', 'https://pp.grubhub.com/restaurant/india-clay-oven-restaurant-and-full-bar-2436-clement-st-san-francisco/54117?chiri_restaurant-banner='+CID);
+    document.getElementById("l18").setAttribute('href', 'https://pp.grubhub.com/restaurant/india-clay-oven-restaurant-and-full-bar-2436-clement-st-san-francisco/54117?chiri_restaurant-banner='+CID);
+
+    document.getElementById("l19").setAttribute('href', 'https://pp.grubhub.com/track-your-order/?chiri_order-status-container='+CID);
+    document.getElementById("l20").setAttribute('href', 'https://pp.grubhub.com/track-your-order/?chiri_order-status-top-content='+CID);
+    document.getElementById("l21").setAttribute('href', 'https://pp.grubhub.com/track-your-order/?chiri_order-status-footer-content='+CID);
+    document.getElementById("l22").setAttribute('href', 'https://pp.grubhub.com/track-your-order/?chiri_receipt-banner-content='+CID);
+    document.getElementById("l23").setAttribute('href', 'https://pp.grubhub.com/track-your-order/?chiri_appbanner='+CID);
+
+    document.getElementById("l24").setAttribute('href', 'https://pp.grubhub.com/order-receipt/?chiri_order-status-footer-content='+CID);
+    document.getElementById("l25").setAttribute('href', 'https://pp.grubhub.com/order-receipt/?chiri_thankyou-container='+CID);
+    document.getElementById("l26").setAttribute('href', 'https://pp.grubhub.com/order-receipt/?chiri_thankyou-top-content='+CID);
+    document.getElementById("l27").setAttribute('href', 'https://pp.grubhub.com/order-receipt/?chiri_thankyou-footer-content='+CID);
+    document.getElementById("l28").setAttribute('href', 'https://pp.grubhub.com/order-receipt/?chiri_receipt-banner-content='+CID);
+    document.getElementById("l29").setAttribute('href', 'https://pp.grubhub.com/order-receipt/?chiri_appbanner='+CID);
+
+    document.getElementById("l30").setAttribute('href', 'https://pp.grubhub.com/thank-you/?chiri_thankyou-container='+CID);
+    document.getElementById("l31").setAttribute('href', 'https://pp.grubhub.com/thank-you/?chiri_thankyou-top-content='+CID);
+    document.getElementById("l32").setAttribute('href', 'https://pp.grubhub.com/thank-you/?chiri_thankyou-footer-content='+CID);
+    document.getElementById("l33").setAttribute('href', 'https://pp.grubhub.com/thank-you/?chiri_receipt-banner-content='+CID);
+    document.getElementById("l34").setAttribute('href', 'https://pp.grubhub.com/thank-you/?chiri_appbanner='+CID);
+}
+</script>
+
+    </body>
+</html>

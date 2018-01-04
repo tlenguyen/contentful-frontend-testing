@@ -9,66 +9,16 @@ function setCheckbox(){
     var ids6 = new Array( document.getElementById("rFooter"), document.getElementById("rContainer"), document.getElementById("rTop"), document.getElementById("rTFooter"), document.getElementById("rReceipt"), document.getElementById("rAppbanner") );
     var ids7 = new Array( document.getElementById("tContainer"), document.getElementById("tTop"), document.getElementById("tFooter"), document.getElementById("tReceipt"), document.getElementById("tAppbanner") );
 
-    if (els[0].checked)
-        for (j = 0; j < ids1.length; j++) {
-            ids1[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids1.length; j++) {
-            ids1[j].disabled = true;
-        }
-    
-    if (els[1].checked)
-        for (j = 0; j < ids2.length; j++) {
-            ids2[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids2.length; j++) {
-            ids2[j].disabled = true;
-        }
+    var ids = new Array( ids1, ids2, ids3, ids4, ids5, ids6, ids7 );
 
-    if (els[2].checked)
-        for (j = 0; j < ids3.length; j++) {
-            ids3[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids3.length; j++) {
-            ids3[j].disabled = true;
-        }
-
-    if (els[3].checked)
-        for (j = 0; j < ids4.length; j++) {
-            ids4[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids4.length; j++) {
-            ids4[j].disabled = true;
-        }
-
-    if (els[4].checked)
-        for (j = 0; j < ids5.length; j++) {
-            ids5[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids5.length; j++) {
-            ids5[j].disabled = true;
-        }
-
-    if (els[5].checked)
-        for (j = 0; j < ids6.length; j++) {
-            ids6[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids6.length; j++) {
-            ids6[j].disabled = true;
-        }
-
-    if (els[6].checked)
-        for (j = 0; j < ids7.length; j++) {
-            ids7[j].disabled = false;
-        }
-    else
-        for (j = 0; j < ids7.length; j++) {
-            ids7[j].disabled = true;
-        }
+    for (i = 0; i < els.length; i++) {
+        if (els[i].checked) 
+            for (j = 0; j < ids[i].length; j++) {
+                ids[i][j].disabled = false;
+            }
+        else
+            for (j = 0; j < ids[i].length; j++) {
+                ids[i][j].disabled = true;
+            }
+    }
 }
